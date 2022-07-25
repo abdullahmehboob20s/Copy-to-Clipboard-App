@@ -25,7 +25,7 @@ function CopyToClipboardForm() {
 
     copy(`Caller: ${formState.name}
 MDN: ${formState.number}
-Problem: ${formState.reason}
+Reason for calling: ${formState.reason}
 Resolution: ${formState.resolution}`);
   };
 
