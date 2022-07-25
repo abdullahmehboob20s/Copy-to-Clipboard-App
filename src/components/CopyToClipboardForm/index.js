@@ -23,9 +23,9 @@ function CopyToClipboardForm() {
   const formHandler = (e) => {
     e.preventDefault();
 
-    copy(`Caller: ${formState.name}
-MDN: ${formState.number}
-Reason for calling: ${formState.reason}
+    copy(`Callers Name: ${formState.name}
+Callers Phone Number: ${formState.number}
+Reason for Call: ${formState.reason}
 Resolution: ${formState.resolution}`);
   };
 
@@ -39,7 +39,7 @@ Resolution: ${formState.resolution}`);
         <h1>Notes:</h1>
         <form onSubmit={formHandler}>
           <div>
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Callers Name:</label>
             <input
               type="text"
               placeholder="Your Name"
@@ -51,7 +51,7 @@ Resolution: ${formState.resolution}`);
             />
           </div>
           <div>
-            <label htmlFor="number">Phone Number:</label>
+            <label htmlFor="number">Callers Phone Number:</label>
             <input
               type="number"
               placeholder="Your Phone Number"
