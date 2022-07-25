@@ -23,8 +23,6 @@ function CopyToClipboardForm() {
   const formHandler = (e) => {
     e.preventDefault();
 
-    console.log("Clicked");
-
     copy(`Caller: ${formState.name}
 MDN: ${formState.number}
 Problem: ${formState.reason}

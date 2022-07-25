@@ -35,7 +35,7 @@ function useCopyToClipboard(notifyTimeout = 2000) {
     );
 
     return () => clearTimeout(timeoutId);
-  }, [copyStatus]);
+  }, [copyStatus, notifyTimeout]);
 
   return { copiedText, copy, copyStatus };
 }
