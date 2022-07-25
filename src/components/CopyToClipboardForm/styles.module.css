@@ -1,0 +1,102 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper label {
+  display: block;
+}
+
+.wrapper > div {
+  max-width: 30rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.wrapper form {
+  margin-top: 1.2rem;
+}
+
+.wrapper h1 {
+  font-size: 2rem;
+  font-size: 900;
+}
+
+.wrapper input,
+.wrapper textarea {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.wrapper input:disabled,
+.wrapper textarea:disabled {
+  opacity: 0.6;
+}
+
+.wrapper label {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.wrapper label,
+.wrapper input,
+.wrapper textarea,
+.wrapper button {
+  font-size: 1rem;
+}
+
+.wrapper input,
+.wrapper textarea {
+  padding: 0.6rem 1rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.596);
+  resize: none;
+}
+
+.wrapper textarea {
+  height: 4rem;
+}
+
+.wrapper form > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.wrapper label {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.btns > :not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.btns button {
+  padding: 0.8rem 1rem;
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btns > button:nth-child(1) {
+  background-color: #f26631;
+}
+.btns > button:nth-child(1).copied {
+  background-color: #f264318f;
+}
+.btns > button:nth-child(2) {
+  background-color: black;
+}
